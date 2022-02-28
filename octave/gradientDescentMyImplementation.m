@@ -1,3 +1,8 @@
+%This is a backup of Gradient Descent which didn't quite work, Written a lot of comments in here...
+%The actual gradient descent implementation is in gradientDescent.m
+
+
+
 function [theta, J_history] = gradientDescent(X, y, theta, alpha, num_iters)
 %GRADIENTDESCENT Performs gradient descent to learn theta
 %   theta = GRADIENTDESCENT(X, y, theta, alpha, num_iters) updates theta by 
