@@ -27,13 +27,30 @@ sigma = zeros(1, size(X, 2));
 %       
 
 
+% disp('Mu-Mean');
+% disp(mu)
+% disp('Sigma-Standard deviation');
+% disp(sigma)
+% Mu-Mean
+%   0  0
+% Sigma-Standard deviation
+%   0  0
+for iter = 1: size(X, 2)
 
+	mu(iter) = mean(X(:, iter));
+	% disp("mean");
+	% disp(mu(1,1));
+	% disp(mu(1,2));
 
+	sigma(iter) = std(X(:, iter));
 
+	X_norm(:, iter) = ( X_norm(:, iter) - mu(iter) )/ sigma(iter)
 
 
 
 
 % ============================================================
+
+end
 
 end
