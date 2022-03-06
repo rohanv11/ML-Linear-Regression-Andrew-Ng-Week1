@@ -14,6 +14,17 @@ J = 0;
 %               You should set J to the cost.
 
 
+% Hypothesis
+J = X * theta
+
+% error
+J = J - y
+
+% square each element
+J = J .^ 2
+
+% take sum
+J = sum(J) / (2 * m)
 
 
 
